@@ -1,5 +1,7 @@
 {
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.pythonPath": "/Users/sebassdc/Library/Caches/pypoetry/virtualenvs/flask-tutorial-4_2q5vVQ-py3.8/bin/python"
 }

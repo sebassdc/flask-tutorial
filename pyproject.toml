@@ -10,6 +10,20 @@ Flask = "^1.1.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+black = {version = "^20.8b1", allow-prereleases = true}
+coverage = {extras = ["toml"], version = "^5.3.1"}
+pytest-cov = "^2.10.1"
+
+[tool.coverage.paths]
+source = ["/", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["flaskr"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
